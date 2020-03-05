@@ -80,7 +80,7 @@ $(function () {
             this.x = e.pageX - this.o;
             this.dom.css('right', Math.abs(this.x));
             this.axis.css({
-                'right': this.x,
+                'right': Math.abs(this.x),
                 'width': this.cWidth - Math.abs(this.x) - Math.abs(this.compare.x)
             });
             // this.dom.text(Math.abs(this.x));
